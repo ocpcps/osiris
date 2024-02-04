@@ -56,5 +56,146 @@ Para criar um novo projeto dividido em três módulos distintos — backend (API
             Este esboço proporciona uma base sólida para iniciar seu projeto, mas lembre-se de que cada aplicação tem requisitos únicos que podem exigir ajustes nas ferramentas e nas abordagens sugeridas.
 
 
+=================================================================================================================================================
 
+PROJETO OSIRIS
+
+    [git]
+
+        URL									https://github.com/
+	First Name								OCP
+	Last Name								Sistemas
+	Email									atendimento@ocp.inf.br
+	Username								ocpcps
+	Senha									qwerty2099
+	Nova Senha								MPHh1O7LHG9	
+	Nova Senha								jK7ZfYLyk9NmliW				(04/10/2023)
+
+        PROJECT:		ocpcps/osiris
+	Description:		System development project designed to serve customers via online chat, cameras, e-commerce, mini social network, and profile page for the sale of specialized services.
+									Public
+		Default branch			main
+		Email notifications:	        ocpcps@gmail.com
+		URL				https://github.com/ocpcps/osiris
+		Token				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
+		HTTP				https://github.com/ocpcps/osiris.git
+	
+		git clone https://github.com/ocpcps/osiris.git
+		
+		cd osiris
+		echo "# osiris" >> README.md
+		git init
+		
+			git status
+			git add .
+			git commit -m "Inicio de projeto: Osiris em xx/xx/xxxx V.xxx.xxx"
+			git branch -M main
+			git remote set-url origin https://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@github.com/ocpcps/osiris.git
+			git push -u origin main
+
+
+=================================================================================================================================================
+
+
+    PROJETO OSIRIS
+
+    [frontend]
+
+
+=================================================================================================================================================
+
+    PROJETO OSIRIS
+
+    [backend]
+            - Instalação do Docker
+                    Instalar o Docker no Ubuntu 22.04 (WSL2)
+                            Atualize a Lista de Pacotes:
+                                # sudo apt update
+
+                    Instale os Pré-Requisitos Necessários:
+                                # sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+                    Adicione a Chave GPG Oficial do Docker:
+                                # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+                    Adicione o Repositório do Docker às Fontes do APT:
+                                # echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+                    Atualize a Lista de Pacotes Novamente Para Incluir o Repositório do Docker:
+                                # sudo apt update
+
+                    Instale o Docker CE (Community Edition):
+                                # sudo apt install docker-ce
+
+            - Verifique se o Docker Foi Instalado Corretamente:
+                    # sudo docker run hello-world
+                    Este comando deve baixar uma imagem de teste e executá-la em um contêiner. Se você ver uma mensagem de saudação do Docker, a instalação foi bem-sucedida.
+
+            - Instalar o Docker Compose no Ubuntu 22.04 (WSL2)
+                    O Docker Compose é uma ferramenta para definir e rodar aplicações Docker multi-contêineres. A partir da versão 1.27.0, o Docker Compose vem como um plugin do Docker. No entanto, você pode querer instalar a versão autônoma do Docker Compose seguindo estes passos:
+
+                    Baixe a Versão Atual do Docker Compose:
+                                # sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+                    Substitua 1.29.2 pela última versão do Docker Compose disponível no GitHub.
+
+                    Torne o Binário Executável:
+                                # sudo chmod +x /usr/local/bin/docker-compose
+
+                    Verifique se o Docker Compose Foi Instalado Corretamente:
+                                # docker-compose --version
+                                Este comando deve exibir a versão do Docker Compose, indicando que a instalação foi bem-sucedida.
+
+            - Considerações Finais
+                    Permissões do Usuário: Para rodar o Docker como um usuário não-root (sem usar sudo), você precisa adicionar seu usuário ao grupo docker:
+                                # sudo usermod -aG docker ${USER}
+
+                    Após adicionar seu usuário ao grupo docker, saia e entre novamente na sessão do WSL2, ou reinicie o WSL2 para aplicar as mudanças.
+
+                    Usando o Docker no WSL2: Lembre-se de que, ao usar o Docker no WSL2, você está operando em um ambiente Linux completo. Isso significa que você pode usar todas as funcionalidades do Docker disponíveis para Linux.
+
+                    Se você encontrar algum problema durante a instalação, verifique se todos os comandos foram digitados corretamente e se sua versão do Ubuntu é compatível com as instruções fornecidas.
+
+
+            - Instalar a imagem docker do Node.js
+                    # docker pull node
+            - Verificar se o Docker está instalado
+                    # docker --version
+            - Verificar se o Docker Compose está instalado
+                    # docker-compose -v
+            - Instalar o NPM no Ubuntu
+                    # apt install npm
+            - Instalar o Node.js
+                    # npm init -y
+            - Instalar o Express (Node)
+                    # npm install express
+            - Criar os arquivos
+                    # touch index.js
+                    # touch Dockerfile
+            - Personalizar o index.js
+            - Personalizar o Dockerfile
+            - Criar o containerizar
+                    Nome do container: ocpcps/backend
+                    # docker build -t ocpcps/backend .
+            - Executar a aplicação no Docker
+                    # docker run -p 3000:3000 -d ocpcps/backend
+            - Verificar as imagens docker que temos criadas
+                    # docker images
+                            ocpcps/backend   latest    e8cebd91165b   8 minutes ago   147MB
+            - Verificar quais container docker estão em execução
+                    # docker ps
+                    # docker ps -a
+            - Para parar a execução de um container:
+                    # dcoker stop <container_id>
+            - Se você precisar forçar a parada de um contêiner imediatamente sem esperar pelo tempo de parada
+                    # docker kill <container_id>
+            - Verificar tudo o que está rodando na porta 3000:
+                    # sudo lsof -i :3000
+        
+
+
+
+
+
+=================================================================================================================================================
 
