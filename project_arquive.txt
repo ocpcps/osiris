@@ -94,13 +94,6 @@ PROJETO OSIRIS
 			git push -u origin main
 
 
-=================================================================================================================================================
-
-
-    PROJETO OSIRIS
-
-    [frontend]
-
 
 =================================================================================================================================================
 
@@ -179,6 +172,10 @@ PROJETO OSIRIS
                     # docker build -t ocpcps/backend .
             - Executar a aplicação no Docker
                     # docker run -p 3000:3000 -d ocpcps/backend
+
+                        Acesso:
+                        http://localhost:3000/
+
             - Verificar as imagens docker que temos criadas
                     # docker images
                             ocpcps/backend   latest    e8cebd91165b   8 minutes ago   147MB
@@ -195,6 +192,41 @@ PROJETO OSIRIS
 
 
 
+
+
+=================================================================================================================================================
+
+
+    PROJETO OSIRIS
+
+    [frontend]
+                1. Preparar o Ambiente Local
+                        Antes de começar, certifique-se de que você tem o Docker instalado e funcionando em sua máquina. Se você ainda não tem o Angular CLI instalado globalmente em sua máquina e deseja usar comandos do Angular fora do Docker, instale-o usando:
+                                # npm install -g @angular/cli
+
+                2. Criar um Novo Projeto Angular (Opcional)
+                        Se você já tem um projeto Angular, pode pular este passo. Para criar um novo projeto Angular, execute:
+                                # ng new frontangular
+                                        SCC
+                                # cd frontangular
+
+                3. Criar um Dockerfile
+                        Dentro da pasta do seu projeto Angular, crie um arquivo chamado Dockerfile sem extensão e adicione o conteúdo.
+
+
+                4. Acessar o projeto (Angular)
+                        # cd frontend
+                        # cd frontangular
+
+                5. Criar a imagem do container Docker
+                        Nome do container:  ocpcps/frontend
+                        # docker build -t cpcps/frontend .
+
+                6. Rodar a imagem do container Docker
+                        # docker run -d -p 4200:80 ocpcps/frontend
+
+                        Acesso:
+                        http://localhost:4200/
 
 
 =================================================================================================================================================

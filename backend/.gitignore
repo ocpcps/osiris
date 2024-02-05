@@ -1,0 +1,95 @@
+# Dependências
+node_modules/
+jspm_packages/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diretório de build
+dist
+build
+
+# Arquivos de ambiente
+.env
+.env.test
+.env*.local
+
+# Diretórios de cache do IDE e ferramentas
+.cache
+.next
+.nuxt
+.vuepress
+.serverless
+.fusebox
+.dynamodb
+.vscode/
+*.code-workspace
+.history
+.idea/
+*.iml
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.tscache
+*.tsbuildinfo
+*.happypack
+*.reify-cache
+*.jest
+
+# Arquivos de cobertura de teste
+coverage/
+.nyc_output/
+
+# Arquivos de produção
+*.log
+
+# Diretórios de documentação gerados
+out/
+docs/
+
+# Arquivos Yarn
+.yarn-integrity
+.pnp/
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Arquivos de configuração do editor
+.editorconfig
+
+# Arquivo de lock
+package-lock.json
+yarn.lock
+
+# Arquivos compilados
+*.compiled
+*.min.js
+*.map
+*.d.ts
+
+# Arquivos TypeScript transpilados
+*.js
+*.jsx
+!jest.config.js
+!next.config.js
+!postcss.config.js
+!tailwind.config.js
+!vue.config.js
+!/plugins/**/*
+!/middlewares/**/*
