@@ -1,0 +1,55 @@
+# Arquivos gerais de sistema que devem ser ignorados
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Diretório de dependências do Node.js no backend
+/backend/node_modules/
+
+# Arquivos de log do npm que podem aparecer no backend
+/backend/npm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+
+# Diretório de saída de compilação do Angular no frontend
+/frontend/frontangular/dist/
+/frontend/frontangular/out-tsc/
+
+# Diretórios de cache do Angular CLI
+/frontend/frontangular/.angular/cache/
+
+# Arquivos de ambiente do Angular que podem conter informações sensíveis
+/frontend/frontangular/src/environments/*.ts
+!/frontend/frontangular/src/environments/environment.prod.ts
+
+# node_modules para o diretório frontend
+/frontend/frontangular/node_modules/
+
+# Arquivos de cache e logs que o Angular/Node.js podem gerar
+/frontend/frontangular/*.log
+/frontend/frontangular/*.pid
+/frontend/frontangular/*.pid.lock
+
+# Arquivos de editor de código e configurações de IDE que são específicos do usuário
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Outros arquivos/diretórios comuns a serem ignorados
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*~
+
+# Arquivos de lock de pacotes
+package-lock.json
+yarn.lock
+
+# Arquivos de cobertura e teste
+/coverage
+/.nyc_output

@@ -77,7 +77,7 @@ PROJETO OSIRIS
 		Default branch			main
 		Email notifications:	        ocpcps@gmail.com
 		URL				https://github.com/ocpcps/osiris
-		Token				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
+		Token				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
 		HTTP				https://github.com/ocpcps/osiris.git
 	
 		git clone https://github.com/ocpcps/osiris.git
@@ -88,9 +88,9 @@ PROJETO OSIRIS
 		
 			git status
 			git add .
-			git commit -m "Inicio de projeto: Osiris em xx/xx/xxxx V.xxx.xxx"
+			git commit -m "Inicio de projeto: Osiris em 04/02/2024 V.001.004"
 			git branch -M main
-			git remote set-url origin https://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@github.com/ocpcps/osiris.git
+			git remote set-url origin https://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@github.com/ocpcps/osiris.git
 			git push -u origin main
 
 
