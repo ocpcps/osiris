@@ -1,0 +1,22 @@
+
+PROJECT:					    ocpcps/osiris
+		Description:			System development project designed to serve customers via online chat, cameras, e-commerce, mini social network, and profile page for the sale of specialized services.
+								Public
+		Default branch			main
+		Email notifications:	ocpcps@gmail.com
+		URL						https://github.com/ocpcps/osiris
+		Token					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
+		HTTP					https://github.com/ocpcps/osiris.git
+	
+		git clone https://github.com/ocpcps/osiris.git
+		
+		cd osiris
+		echo "# osiris" >> README.md
+		git init
+		
+		git status
+		git add .
+		git commit -m "Inicio de projeto: Osiris em xx/xx/xxxx V.xxx.xxx"
+		git branch -M main
+		git remote set-url origin https://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@github.com/ocpcps/osiris.git
+		git push -u origin main
