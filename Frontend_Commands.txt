@@ -1,0 +1,7 @@
+
+# Para executar o projeto do Frontend (Angular) apartir do Docker
+docker run -it -p 4200:4200 Frontend
+
+# Acessar a URL abaixo(durante a execução do container)
+http://localhost:4200/
+
