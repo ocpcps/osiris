@@ -1,7 +1,9 @@
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';  // Importação necessária para `router-outlet`
 import { AppRoutingModule } from './app-routing.module';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { AppComponent } from './app.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -17,8 +19,10 @@ function initializeKeycloak(keycloak: KeycloakService) {
 }
 
 @NgModule({
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    RouterModule,  // Adicione esta linha
     AppRoutingModule,
     KeycloakAngularModule
   ],
@@ -29,6 +33,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
       multi: true,
       deps: [KeycloakService]
     }
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

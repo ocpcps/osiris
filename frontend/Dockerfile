@@ -1,21 +1,24 @@
-# Use a imagem oficial do Node.js como base
-FROM node:18
+# Etapa de build
+FROM node:19-alpine as build
 
-# Defina o diretório de trabalho no contêiner
 WORKDIR /app
 
-# Copie o package.json e package-lock.json para o diretório de trabalho
-COPY package*.json ./
-
-# Instale as dependências do projeto
-RUN npm install -g @angular/cli
+# Copiar arquivos de configuração do npm
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Copie todo o projeto para o diretório de trabalho
+# Copiar todo o código fonte e construir a aplicação Angular
 COPY . .
+RUN npm run build --prod
 
-# Expõe a porta em que o aplicativo será executado
-EXPOSE 4200
+# Etapa de produção
+FROM nginx:alpine
 
-# Comando para iniciar a aplicação Angular
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+# Copiar arquivos de build da etapa anterior
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Expor a porta 80
+EXPOSE 80
+
+# Comando padrão para iniciar o nginx
+CMD ["nginx", "-g", "daemon off;"]
