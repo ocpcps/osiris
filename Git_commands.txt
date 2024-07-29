@@ -30,7 +30,7 @@ PROJECT:					    ocpcps/osiris
 		
 		git status
 		git add .
-		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.18"
+		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.19"
 		git branch -M main
 		git remote set-url origin https://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@github.com/ocpcps/osiris.git
 		git push -u origin main
