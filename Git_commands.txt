@@ -11,6 +11,16 @@ PROJECT:					    ocpcps/osiris
 								GITHUB Login:
 									Email			atendimento@ocp.inf.br
 									Password		biDQKw%3biOP
+
+
+=====================================================================================================================================================
+
+	ACESSO VIA SSH
+
+	# Gerar uma Chave SSH:
+		$ ssh-keygen -t ed25519 -C "atendimento@ocp.inf.br"
+		Generating public/private ed25519 key pair.
+
 	
 		git clone https://github.com/ocpcps/osiris.git
 		
@@ -20,7 +30,18 @@ PROJECT:					    ocpcps/osiris
 		
 		git status
 		git add .
-		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.6"
+		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.18"
 		git branch -M main
-		git remote set-url origin https://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@github.com/ocpcps/osiris.git
+		git remote set-url origin https://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@github.com/ocpcps/osiris.git
 		git push -u origin main
+
+=====================================================================================================================================================
+
+	New personal access token (classic)
+		Note:			the project Osiris with website incredible.
+		Expiration		30 days
+		Select scopes	All
+		Token			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				(28/07/2024)
+
+=====================================================================================================================================================
+
