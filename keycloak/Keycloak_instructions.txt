@@ -1,0 +1,58 @@
+
+    Acessar o diretório do Keycloak
+        # cd /var/git/osiris/keycloak
+
+    Rodar o Docker Image
+        # docker-compose up -d
+
+
+    Verificar os Logs do Contêiner:
+        # docker-compose logs -f keycloak
+    
+
+    URL Acesso:
+    http://localhost:8080/
+
+        Usuario:        admin
+        Senha:          admin
+
+
+
+======================================================================================================================================================
+
+    Keycloak Setup
+
+        Realm:      OsirisRealm
+
+        Client:
+            Client type                         OpenID Connect
+            Client ID                           angular-client
+            Name                                angular-client
+            Description                         API for integration Angular with Keycloak.xxxxxx
+            Always display in UI                Off
+            Client authentication               On
+            Authorization                       On
+            Authentication flow
+                [ X ]   Standard flow
+                [ X ]   Implicit flow
+                [   ]   OAuth 2.0 Device Authorization Grant
+                [   ]   OIDC CIBA Grant
+                [   ]   Direct access grants
+                [   ]   Service accounts roles
+            Root URL                            ()
+            Home URL                            ()
+            Valid redirect URIs                 http://localhost:4200/
+            Valid post logout redirect URIs     ()
+            Web origins                         http://localhost:4200/
+
+            ADVANCED SETTINGS
+
+
+
+======================================================================================================================================================
+
+
+
+
+======================================================================================================================================================
+

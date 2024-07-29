@@ -7,6 +7,10 @@ PROJECT:					    ocpcps/osiris
 		URL						https://github.com/ocpcps/osiris
 		Token					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
 		HTTP					https://github.com/ocpcps/osiris.git
+
+								GITHUB Login:
+									Email			atendimento@ocp.inf.br
+									Password		biDQKw%3biOP
 	
 		git clone https://github.com/ocpcps/osiris.git
 		

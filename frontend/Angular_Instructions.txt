@@ -42,6 +42,45 @@
     
     ==============================================================================================================================================
 
+    Acessar o diretório do Frontend (Angular):
+        # cd /var/git/osiris/frontend
 
+
+    Iniciar o Frontend (Angular) sem o Docker:
+        # ng serve
+            (Acessar o website: http://localhost:4200)
+            CTRL + Z  (Sair)
     
+    ==============================================================================================================================================
+
+    Docker
+
+            Construir a Imagem Docker
+                # docker-compose build
+
+            Iniciar o Contêiner
+                # docker-compose up -d
+
+                Acessar a Aplicação Angular
+                Após iniciar o contêiner, você pode acessar a aplicação Angular através do navegador:
+                    URL: http://localhost:4200
+
+
+            Verificar o Funcionamento
+                Para verificar se o contêiner do Angular está funcionando corretamente, você pode visualizar os logs do contêiner:
+                # docker-compose logs -f frontend
+
+    ==============================================================================================================================================
+
+    NGINX
+
+        URL Acess:
+            http://localhost:4201/
+
+
+    ==============================================================================================================================================
+
+
+
+
     ==============================================================================================================================================
