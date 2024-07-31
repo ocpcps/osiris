@@ -1,20 +1,33 @@
 
     Acessar o diretório do Keycloak
-        # cd /var/git/osiris/keycloak
+        $ cd /var/git/osiris/keycloak
+
+
+    Parar e Remover os Contêineres:
+        $ docker-compose down
 
     Rodar o Docker Image
-        # docker-compose up -d
+        $ docker-compose build
+        $ docker-compose up -d
 
-
-    Verificar os Logs do Contêiner:
-        # docker-compose logs -f keycloak
-    
 
     URL Acesso:
     http://localhost:8080/
 
         Usuario:        admin
         Senha:          admin
+
+
+    Verificar os Logs do Contêiner:
+        $ docker-compose logs -f keycloak
+    
+
+    
+    Construir e Iniciar os Contêineres Novamente:
+        $ docker-compose up -d --build
+        $ docker-compose logs -f keycloak
+
+            Abra o navegador e acesse http://localhost:8085 para ver a interface de administração do Keycloak.
 
 
 

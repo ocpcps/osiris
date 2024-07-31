@@ -9,6 +9,6 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: admin
       PROXY_ADDRESS_FORWARDING: "true"
     ports:
-      - "8080:8080"
+      - "8085:8080"  # Mapeando a porta 8085 para a porta 8080 do contêiner
     command:
       - start-dev

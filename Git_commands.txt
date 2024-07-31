@@ -30,9 +30,9 @@ PROJECT:					    ocpcps/osiris
 		
 		git status
 		git add .
-		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.19"
+		git commit -m "Inicio de projeto: Osiris em 26/07/2024 V.1.0.20"
 		git branch -M main
-		git remote set-url origin https://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@github.com/ocpcps/osiris.git
+		git remote set-url origin https://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@github.com/ocpcps/osiris.git
 		git push -u origin main
 
 =====================================================================================================================================================
@@ -41,7 +41,7 @@ PROJECT:					    ocpcps/osiris
 		Note:			the project Osiris with website incredible.
 		Expiration		30 days
 		Select scopes	All
-		Token			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				(28/07/2024)
+		Token			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				(30/07/2024)
 
 =====================================================================================================================================================
 

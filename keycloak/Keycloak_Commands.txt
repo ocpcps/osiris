@@ -1,6 +1,0 @@
-
-# Para acessar o Keycloak, deve-se executar o conteiner
-
-
-## URL de acesso
-http://localhost:8080/
