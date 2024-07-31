@@ -1,5 +1,5 @@
 
-    Node    v18.19.1
+    Node    v21.6.1
     NPM     10.2.4
 
     ==============================================================================================================================================
@@ -53,17 +53,26 @@
     
     ==============================================================================================================================================
 
+    Build do Angular
+        $ npm rum build
+        
+
+
+    
+    ==============================================================================================================================================
+
+
     Docker
 
-            Construir a Imagem Docker
-                # docker-compose build
+            # Gerar o build do image Docker (Angular)
+                $ docker build -t angular-docker .
 
-            Iniciar o Contêiner
-                # docker-compose up -d
 
-                Acessar a Aplicação Angular
-                Após iniciar o contêiner, você pode acessar a aplicação Angular através do navegador:
-                    URL: http://localhost:4200
+            # Para executar o projeto do Frontend (Angular) apartir do Docker
+                $ docker run -it -p 8080:80 angular-docker
+
+            # Acessar a URL abaixo(durante a execução do container)
+                http://localhost:8080/
 
 
             Verificar o Funcionamento
@@ -72,15 +81,16 @@
 
     ==============================================================================================================================================
 
-    NGINX
-
-        URL Acess:
-            http://localhost:4201/
+    
 
 
     ==============================================================================================================================================
 
 
+    # Para executar o projeto do Frontend (Angular) apartir do Docker
+        $ docker run -it -p 8080:80 angular-docker
 
+    # Acessar a URL abaixo(durante a execução do container)
+        http://localhost:8080/
 
     ==============================================================================================================================================
